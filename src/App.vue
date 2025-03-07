@@ -1,9 +1,11 @@
 <script setup>
 import { computed } from 'vue';
+import Captcha from './components/Captcha.vue';
+import Card from "./components/Card.vue"
 import backgroundImg from "./assets/blue-bg.avif"
 import vipTutorsLogo from "./assets/viptutors.png"
 
-import Card from "./components/Card.vue"
+
 const background = computed(() => ({
   background: `url(${backgroundImg})`,
   backgroundSize: `cover`,
@@ -37,7 +39,7 @@ const background = computed(() => ({
             </p>
           </div>
           <div class="mb-3">
-            <h2>Captcha</h2>
+            <Captcha />
           </div>
           <div class="mb-3">
             <label class="font-medium block mb-1">Enter the characters you see above</label>
