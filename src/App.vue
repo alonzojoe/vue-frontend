@@ -19,10 +19,13 @@ const background = computed(() => ({
   <div class="min-h-[100dvh] flex items-center justify-center" :style="background">
     <Card>
       <div class="flex gap-6 flex-nowrap">
-        <div class="flex-grow">
+        <div class="flex-grow hidden lg:block">
           <img :src="vipTutorsLogo" class="h-auto w-[15rem]" />
         </div>
         <div class="flex-grow">
+          <div class="mb-5 block lg:hidden">
+            <img :src="vipTutorsLogo" class="h-auto w-[15rem]" />
+          </div>
           <h2 class="text-left text-2xl font-bolder mb-10">Sign in to your account</h2>
           <div class="mb-3">
             <label class="font-medium block mb-1">Username / Email Address / Mobile</label>
