@@ -2,8 +2,11 @@
 import { computed } from 'vue';
 import Captcha from './components/Captcha.vue';
 import Card from "./components/Card.vue"
+import Label from './components/Label.vue';
+import InputText from './components/InputText.vue';
 import backgroundImg from "./assets/blue-bg.avif"
 import vipTutorsLogo from "./assets/viptutors.png"
+
 
 
 const background = computed(() => ({
@@ -28,14 +31,12 @@ const background = computed(() => ({
           </div>
           <h2 class="text-left text-2xl font-bolder mb-10">Sign in to your account</h2>
           <div class="mb-3">
-            <label class="font-medium block mb-1">Username / Email Address / Mobile</label>
-            <input type="text"
-              class="w-full px-2 py-1 text-md bg-white border outline-none focus:ring-0 border-gray-300 rounded-md placeholder-gray-400 focus:ring-indigo-500" />
+            <Label label="Username / Email Address / Mobile" />
+            <InputText type="text" />
           </div>
           <div class="mb-3">
-            <label class="font-medium block mb-1">Password</label>
-            <input type="password"
-              class="w-full px-2 py-1 text-md bg-white border outline-none focus:ring-0 border-gray-300 rounded-md placeholder-gray-400 focus:ring-indigo-500" />
+            <Label label="Password" />
+            <InputText type="password" />
           </div>
           <div class="mb-3">
             <p class="text-sm">Forgot your password? <a href="#" class="text-orange-400 font-bold">Reset Password</a>
@@ -46,8 +47,7 @@ const background = computed(() => ({
           </div>
           <div class="mb-3">
             <label class="font-medium block mb-1">Enter the characters you see above</label>
-            <input type="text"
-              class="w-full px-2 py-1 text-md bg-white border outline-none focus:ring-0 border-gray-300 rounded-md placeholder-gray-400 focus:ring-indigo-500" />
+            <InputText />
           </div>
           <div class="my-8">
             <button
